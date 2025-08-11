@@ -2,7 +2,7 @@
 
 ## 🌐 Aplicación en línea
 
-**¡Prueba la aplicación directamente en la nube!**
+**¡Prueba la aplicación en la web!**
 
 =======
 - **URL**: https://tickets-git-h23pry9a3fqqnrqruagaqm.streamlit.app/

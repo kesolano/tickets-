@@ -2,8 +2,10 @@ import streamlit as st
 import pandas as pd
 import requests
 import os
+import re
 from dotenv import load_dotenv
 
+# Cargar variables de entorno
 load_dotenv()
 API_KEY = os.getenv("PERPLEXITY_API_KEY")
 if not API_KEY:
@@ -16,26 +18,43 @@ headers = {
 }
 
 def clasificar_con_perplexity(texto):
-    prompt = f"""Clasifica el siguiente ticket de soporte en una de las siguientes categorías:
+    prompt = f"""
+Clasifica el siguiente ticket de soporte en una de las siguientes categorías exactas:
 - logística
 - pagos
 - producto defectuoso
 - otros
 
-Solo devuelve la categoría. Ticket: \"{texto}\""""
+Responde ÚNICAMENTE con el nombre exacto de la categoría, sin explicaciones ni texto extra.
+Ticket: "{texto}"
+"""
 
     data = {
         "model": "sonar-reasoning-pro",
         "messages": [{"role": "user", "content": prompt}]
     }
+
     try:
-        r = requests.post("https://api.perplexity.ai/chat/completions", headers=headers, json=data, timeout=30)
+        r = requests.post(
+            "https://api.perplexity.ai/chat/completions",
+            headers=headers,
+            json=data,
+            timeout=30
+        )
         r.raise_for_status()
         res = r.json()
+
         if "choices" in res and res["choices"]:
-            return res["choices"][0]["message"]["content"].strip().lower()
+            raw_response = res["choices"][0]["message"]["content"].strip().lower()
+
+            # Buscar la última coincidencia válida en todo el texto
+            matches = re.findall(r"(logística|pagos|producto defectuoso|otros)", raw_response)
+            if matches:
+                return matches[-1]  # Devuelve la última encontrada, que suele ser la correcta
+
         return "error"
-    except:
+
+    except Exception:
         return "error"
 
 def es_urgente(ticket):

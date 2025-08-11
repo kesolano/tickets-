@@ -1,5 +1,11 @@
 # 📊 Clasificador de Tickets con IA
 
+## 🌐 Aplicación en línea
+
+**¡Prueba la aplicación directamente en la nube!**
+- **URL**: [Próximamente - una vez desplegada]
+- No requiere instalación
+
 Una aplicación web desarrollada con **Streamlit** que utiliza la API de **Perplexity** para clasificar automáticamente tickets de soporte técnico y detectar casos urgentes.
 
 ## 🚀 Características
@@ -87,13 +93,6 @@ ticket
 "URGENTE: El sistema no responde"
 ```
 
-## 🌐 Aplicación en línea
-
-**¡Prueba la aplicación directamente en la nube!**
-- **URL**: [Próximamente - una vez desplegada]
-- No requiere instalación
-- Sube tu CSV y obtén resultados inmediatos
-
 ## ⚡ Detección de urgencia
 
 La aplicación identifica automáticamente tickets urgentes buscando palabras clave como:
@@ -131,16 +130,8 @@ Las contribuciones son bienvenidas. Para cambios importantes:
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
 
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
-
 ## 📧 Contacto
 
-**Desarrollador**: [Tu nombre]  
+**Desarrollador**: Kevin Solano 
 **GitHub**: [@kesolano](https://github.com/kesolano)  
 **Proyecto**: [https://github.com/kesolano/tickets-](https://github.com/kesolano/tickets-)
-
----
-
-⭐ **¡Dale una estrella al repo si te resultó útil!** ⭐

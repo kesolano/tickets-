@@ -7,7 +7,6 @@
 =======
 - **URL**: https://tickets-git-h23pry9a3fqqnrqruagaqm.streamlit.app/
 - No requiere instalación
->>>>>>> 6fee7e71194f7eb2a19591999fce561a3af60a1e
 
 Una aplicación web desarrollada con **Streamlit** que utiliza la API de **Perplexity** para clasificar automáticamente tickets de soporte técnico y detectar casos urgentes.
 
@@ -142,6 +141,4 @@ Las contribuciones son bienvenidas. Para cambios importantes:
 ## 📧 Contacto
 
 **Desarrollador**: Kevin Enrique Solano Jaramillo 
->>>>>>> 6fee7e71194f7eb2a19591999fce561a3af60a1e
-**GitHub**: [@kesolano](https://github.com/kesolano)  
-**Proyecto**: [https://github.com/kesolano/tickets-](https://github.com/kesolano/tickets-)
+**GitHub**: [@kesolano](https://github.com/kesolano)

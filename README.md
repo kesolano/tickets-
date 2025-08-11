@@ -4,7 +4,6 @@
 
 **¡Prueba la aplicación en la web!**
 
-=======
 - **URL**: https://tickets-git-h23pry9a3fqqnrqruagaqm.streamlit.app/
 - No requiere instalación
 
@@ -131,12 +130,6 @@ Las contribuciones son bienvenidas. Para cambios importantes:
 3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
-
-<<<<<<< HEAD
-## 📧 Contacto
-
-**Desarrollador**: Kevin Solano 
-=======
 
 ## 📧 Contacto
 
